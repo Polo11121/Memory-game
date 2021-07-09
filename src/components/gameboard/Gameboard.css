@@ -1,0 +1,83 @@
+.gameboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameboard > h1 {
+  letter-spacing: 2px;
+}
+
+.gameboard__info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  background: rgb(126, 195, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(126, 195, 246, 1) 0%,
+    rgba(31, 163, 214, 1) 100%
+  );
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.gameboard__info > h2 {
+  display: flex;
+  align-items: center;
+}
+
+.gameboard__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 90%;
+}
+
+.gameboard__modal {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gameboard__modalInfo {
+  background: rgb(126, 195, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(126, 195, 246, 1) 0%,
+    rgba(31, 163, 214, 1) 100%
+  );
+  padding: 50px 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameboard__modalExit {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+}
+
+.gameboard__resultButton {
+  font-size: 24px !important;
+  font-weight: bolder !important;
+  color: white;
+  width: fit-content;
+  margin: 0 auto !important;
+  margin-bottom: 50px !important;
+}
+
+@media (max-width: 550px) {
+  .gameboard__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .gameboard__modalInfo {
+    text-align: center;
+  }
+}

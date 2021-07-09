@@ -1,0 +1,59 @@
+.diffPicker {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.diffPicker > h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.diffPicker button {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
+  margin: 0 10px;
+  background-color: #3ad2fb;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.diffPicker__buton--medium:hover {
+  background-color: yellow !important;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.diffPicker__buton--easy:hover {
+  background-color: green !important;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.diffPicker__buton--hard:hover {
+  background-color: red !important;
+}
+
+.diffPicker > input {
+  padding: 20px;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.diffPicker > button:hover {
+  color: #3ad2fb;
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .diffPicker > h1 {
+    text-align: center;
+  }
+
+  .diffPicker > h2 {
+    text-align: center;
+  }
+
+  .diffPicker__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

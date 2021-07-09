@@ -1,0 +1,23 @@
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.home > img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.home > button {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
+  background-color: #3ad2fb;
+}
+
+.home > button:hover {
+  color: #3ad2fb;
+  border: 1px solid black;
+}
